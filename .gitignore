@@ -1,0 +1,17 @@
+# Raw/source data with sample-level fields
+*.csv
+
+# Keep aggregate/model audit CSVs that do not include sample-level rows
+!outputs/cv_fold_metrics.csv
+!outputs/genus_mapping_report.csv
+!outputs/logistic_regression_metrics.csv
+!outputs/selected_features_by_run.csv
+
+# Keep human-readable summary
+!outputs/metrics_summary.md
+
+# Local/runtime files
+__pycache__/
+.DS_Store
+.venv/
+venv/
